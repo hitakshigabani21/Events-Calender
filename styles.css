@@ -1,0 +1,158 @@
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    padding:  1.5%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(13, 13, 224);
+    height: 50px;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.btns{
+    display: flex;
+    gap: 20px;
+}
+
+.btns button{
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    border:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    border-radius: 5px;
+    transition : all 0.3s ease-in-out;
+    cursor: pointer;
+    width: 70px;
+}
+
+.btn button:hover{
+    background-color: white;
+    color: rgb(13, 13, 224);
+    transform: scale(1.05);
+}
+
+.month{
+    color: white;
+    font-size: 2rem;
+}
+
+.weekdays{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 50px;
+    margin-top: 20px;
+}
+
+.weekdays div{
+    text-align: center;
+    color: rgb(13, 13, 224);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.days{
+    display: grid;
+    gap: 7px;
+    grid-template-columns: repeat(7,1fr);
+    margin-top: 20px;
+    height: 80vh;
+    /* width: 90vw; */
+}
+.days .day{
+    transition: all 0.3s ease-in-out;
+    padding: 7px 5px;
+    background-color: white;
+    height : 150px;
+}
+
+.days .day>p{
+    /* text-align: center; */
+    font-size: 16px;
+}
+
+.days .day:not(.next):not(.prev):hover{
+    color: black;
+    background-color: rgb(255, 255, 226) ;
+    /* background-color:azure; */
+}
+
+.days .next,.days .prev{
+    background-color: rgb(245, 242, 242);
+}
+
+.hide{
+    visibility: hidden;
+}
+
+/* .event-name{
+    background-color:cornflowerblue;
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px
+} */
+
+.event-name { 
+    background-color:mistyrose; 
+    font-size: 13px;
+    color:fuchsia;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.modal { 
+    display: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: white; 
+    padding: 20px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    height: 200px;
+    width: 300px;
+}
+
+.modal h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+form button{
+    background-color: blue;
+    padding: 5px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.modal.active { 
+    display: block; 
+}
+.close-btn { 
+    cursor: pointer; 
+    color: blue;
+    float: right; 
+}

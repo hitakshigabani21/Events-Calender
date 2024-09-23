@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="poppins-regular">
+    <div class="container">
+        <div class="calendar">
+            <div class="header">
+                <div class="month poppins-medium"></div>
+                <div class="btns">
+                    <div class="btn prevBtn">
+                        <button>&#8592;</button>
+                    </div>
+                    <div class="btn today">
+                        <button>~</button>
+                     </div>
+                    <div class="btn nextBtn">
+                        <button>&#8594;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="poppins-regular weekdays">
+                <div class="day">Sun</div>
+                <div class="day">Mon</div>
+                <div class="day">Tues</div>
+                <div class="day">Wed</div>
+                <div class="day">Thurs</div>
+                <div class="day">Fri</div>
+                <div class="day">Sat</div>
+            </div>
+            <div class="days">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for adding events -->
+<div id="eventModal" class="modal">
+        <span class="close-btn">X</span>
+        <h3>Add Event</h3>
+    <form id="eventForm">
+        <label for="eventName">Event Name:</label><br>
+        <input type="text" id="eventName" name="eventName" required><br><br>
+        <input type="hidden" id="eventDate" name="eventDate">
+        <button type="submit" class="submit">Add Event</button>
+        <button id="deletebtn">Delete</button>
+    </form>
+</div>
+    <script src="./index.js"></script>
+</body>
+</html>
