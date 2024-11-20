@@ -156,3 +156,10 @@ form button{
     color: blue;
     float: right; 
 }
+
+@media (max-width: 1000px){
+    .weekdays{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 50px;
+    }    
+}

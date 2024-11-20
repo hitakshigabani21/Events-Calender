@@ -137,9 +137,10 @@ function renderCalender(){
     });
 }
 
-getEvents().then(() => {
-    renderCalender();
-});
+// getEvents().then(() => {
+//     renderCalender();
+// });
+renderCalender();
 
 
 
