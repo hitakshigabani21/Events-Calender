@@ -78,7 +78,4 @@ This is a functional calendar application that allows users to:
    ```
 5. Open a pull request.
 
-## Future Improvements
 
-- Integrate a functional API for Indian holidays.
-- Improve the user interface and accessibility.
