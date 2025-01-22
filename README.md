@@ -81,6 +81,4 @@ This is a functional calendar application that allows users to:
 ## Future Improvements
 
 - Integrate a functional API for Indian holidays.
-- Add user authentication to save events online.
-- Enable recurring events (e.g., weekly, monthly).
 - Improve the user interface and accessibility.
